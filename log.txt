@@ -1,0 +1,26 @@
+--2017/5/10
+1.引入Mint UI
+  cnpm i mint-ui -S
+  import MintUI from 'mint-ui'     main.js全局引入Mint UI
+  import 'mint-ui/lib/style.css'
+  Vue.use(MintUI)
+2.引入SASS
+  cnpm install node-sass --save-dev
+  cnpm install sass-loader --save-dev (管理员模式)
+
+--2017/5/11
+1.引入组件：固定header、list、search
+
+--2017/5/12
+1.研究配置独立express连接数据库，将之前项目前后端分离
+
+--2017/5/13
+1.后台读取data.json文件中的数据，使用axios获取后台数据，并解析显示在列表中
+2.适配移动端 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+3.数据传递，在App.vue里用axios获取数据，传递到两个子组件中
+4.子组件中用watch监听父组件传递过来的数据变化，不然第一时间获取的数据是空的
+--2017/5/14
+1.进行搜索过滤
+2.定制组件功能
+--2017/5/15
+花了一天多终于把Mint UI的编译环境配置成功，可以对组件源代码进行修改了
