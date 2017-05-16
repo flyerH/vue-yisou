@@ -23,7 +23,7 @@
     },
     methods: {
       getList: function () {
-        this.$http.get('/*')
+        this.$http.get('/getdata')
           .then((response) => {
             this.listData = response.data;
           })

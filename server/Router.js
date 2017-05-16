@@ -6,7 +6,7 @@ let express = require('express')
 let router = express.Router()
 var fs = require("fs");
 
-router.get('/*', function (req, res) {
+router.get('/getdata', function (req, res) {
   data=fs.readFileSync('./server/data.json');
   res.write(data);
   res.end();

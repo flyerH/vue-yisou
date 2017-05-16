@@ -1,10 +1,12 @@
 <template>
   <div class="list">
     <mt-index-list>
-      <mt-index-section v-for="item in alphabet" :index="item.initial">
-        <mt-cell v-for="cell in item.cells" :title="cell.name" :key="cell.id" :value="cell.id" :phonetic="cell.id">
-          <span class="phonetic">test</span>
+      <mt-index-section v-for="(item,key) in alphabet" :index="item.initial">
+        <mt-cell v-for="cell in item.cells" :title="cell.name" :key="cell.id" :phonetic="cell.id" :index="cell.id">
           <mt-button type="default" size="small">∨</mt-button>
+          <audio :id="'audio'+key">
+            <source src="../assets/2.mp3" type="audio/mpeg">
+          </audio>
         </mt-cell>
       </mt-index-section>
     </mt-index-list>
@@ -51,5 +53,21 @@
   }
   .phonetic{
     margin: 0 auto;
+  }
+  .mint-button--default{
+    background-color: white !important;
+    box-shadow: none !important;
+  }
+  .mint-button::after{
+    background-color: #f6f8fa !important;
+  }
+  .sounds{
+    background: url("../assets/sounds.svg") ;
+    background-size: cover;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
   }
 </style>
