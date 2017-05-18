@@ -2,10 +2,11 @@
   <div class="list">
     <mt-index-list>
       <mt-index-section v-for="(item,key) in alphabet" :index="item.initial">
-        <mt-cell v-for="cell in item.cells" :title="cell.name" :key="cell.id" :phonetic="cell.id" :index="cell.id">
-          <mt-button type="default" size="small">∨</mt-button>
-          <audio :id="'audio'+key">
-            <source src="../assets/2.mp3" type="audio/mpeg">
+        <mt-cell v-for="cell in item.cells" :title="cell.name" :key="cell.id" :phonetic="cell.id" :id="'cell'+cell.id"
+                 :index="cell.id" sounds="sounds">
+          <mt-button type="default" size="small" @click.native="showDescription('cell'+cell.id)">∨</mt-button>
+          <audio :id="'audio'+cell.id" v-on:ended="stopgif(cell.id)">
+            <source src="/static/2.mp3" type="audio/mpeg">
           </audio>
         </mt-cell>
       </mt-index-section>
@@ -42,6 +43,18 @@
           }
         })
       }
+    },
+    methods: {
+      showDescription: function (id) {
+        let thisdescription = document.getElementById(id).getElementsByClassName("description")[0];
+        if (thisdescription.style.display === '')
+          thisdescription.style.display = 'block';
+        else
+          thisdescription.style.display = ''
+      },
+      stopgif: function (id) {
+        document.getElementById("sounds"+id).style.backgroundImage="url(/static/sounds.svg)";
+      }
     }
   };
 </script>
@@ -50,19 +63,28 @@
     width: 100%;
     z-index: 0;
     text-align: left;
+
+    .phonetic {
+      vertical-align: middle;
+      margin-left: 32px;
+    }
   }
-  .phonetic{
+
+  .phonetic {
     margin: 0 auto;
   }
-  .mint-button--default{
+
+  .mint-button--default {
     background-color: white !important;
     box-shadow: none !important;
   }
-  .mint-button::after{
+
+  .mint-button::after {
     background-color: #f6f8fa !important;
   }
-  .sounds{
-    background: url("../assets/sounds.svg") ;
+
+  .sounds {
+    background: url("/static/sounds.svg");
     background-size: cover;
     width: 18px;
     height: 16px;
@@ -70,4 +92,15 @@
     vertical-align: middle;
     margin-left: 20px;
   }
+
+  li {
+    list-style: none;
+  }
+
+  .description{
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: #edf2f7;
+  }
+
 </style>

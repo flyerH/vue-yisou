@@ -1,12 +1,12 @@
 <template>
-  <div class="search">
-    <!--<mt-search v-model="value" :result="filterResult"></mt-search>-->
+  <div class="search" id="search">
     <mt-search v-model="value">
       <mt-cell
         v-for="item in filterResult"
         :key="item.id"
-        :value="item.name">
-
+        :index="item.id"
+        :title="item.name"
+        @click.native="findResult(item.id - 1)">
       </mt-cell>
     </mt-search>
   </div>
@@ -18,7 +18,7 @@
     data () {
       return {
         value: '',
-        result:''
+        result: ''
       }
     },
     props: ['listData'],
@@ -35,11 +35,16 @@
           for (let i in this.listData[firstLetter]) {
             let temp = this.listData[firstLetter][i].name;
             if (new RegExp(this.value, 'i').test(temp))
-              //result.push(temp);
-                result.push(this.listData[firstLetter][i]);
+            //result.push(temp);
+              result.push(this.listData[firstLetter][i]);
           }
           return result;
         }
+      }
+    },
+    methods: {
+      findResult: function (index) {
+        document.getElementById("cell"+index).scrollIntoView();
       }
     }
   }
@@ -59,5 +64,11 @@
 
   .mint-search-list a {
     z-index: 999;
+  }
+  li{
+    list-style: none;
+  }
+  .description{
+    display: none;
   }
 </style>
