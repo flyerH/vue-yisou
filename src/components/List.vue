@@ -1,7 +1,7 @@
 <template>
   <div class="list">
     <mt-index-list>
-      <mt-index-section v-for="(item,key) in alphabet" :index="item.initial">
+      <mt-index-section v-for="(item,key) in alphabet" :index="item.initial" :key="key">
         <mt-cell v-for="cell in item.cells" :title="cell.name" :key="cell.id" :phonetic="cell.id" :id="'cell'+cell.id"
                  :index="cell.id" sounds="sounds">
           <mt-button type="default" size="small" @click.native="showDescription('cell'+cell.id)">∨</mt-button>
