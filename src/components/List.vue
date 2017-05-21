@@ -2,11 +2,13 @@
   <div class="list">
     <mt-index-list>
       <mt-index-section v-for="(item,key) in alphabet" :index="item.initial" :key="key">
-        <mt-cell v-for="cell in item.cells" :title="cell.name" :key="cell.id" :phonetic="cell.id" :id="'cell'+cell.id"
+        <mt-cell v-for="cell in item.cells" :title="cell.name" :key="cell.id" :phonetic="cell.phonetic"
+                 :id="'cell'+cell.id"
                  :index="cell.id" sounds="sounds">
-          <mt-button type="default" size="small" @click.native="showDescription('cell'+cell.id)">∨</mt-button>
+          <mt-button type="default" size="small" @click.native="showDescription('cell'+cell.id,cell.description)">∨
+          </mt-button>
           <audio :id="'audio'+cell.id" v-on:ended="stopgif(cell.id)">
-            <source src="/static/2.mp3" type="audio/mpeg">
+            <source :src="cell.audio" type="audio/mpeg">
           </audio>
         </mt-cell>
       </mt-index-section>
@@ -33,7 +35,13 @@
               name['id'] = id;
               id++;
               //console.log(name)
-              return {name: name['name'], id: name['id']};
+              return {
+                name: name['name'],
+                id: name['id'],
+                phonetic: name['phonetic'],
+                audio: name['audio'],
+                description: name['description']
+              };
               //}
             });
             this.alphabet.push({
@@ -45,16 +53,25 @@
       }
     },
     methods: {
-      showDescription: function (id) {
+      showDescription: function (id, description) {
         let thisdescription = document.getElementById(id).getElementsByClassName("description")[0];
-        if (thisdescription.style.display === '')
+        if (thisdescription.style.display === '') {
           thisdescription.style.display = 'block';
+          if (description)
+            thisdescription.innerText = description;
+        }
         else
           thisdescription.style.display = ''
       },
       stopgif: function (id) {
-        document.getElementById("sounds"+id).style.backgroundImage="url(/static/sounds.svg)";
+          document.getElementById("sounds" + id).src = "/static/sounds.png";
       }
+    },
+    created(){
+      (function preLoadImg() {
+        var img = new Image();
+        img.src = '/static/sounds.gif';
+      })()
     }
   };
 </script>
@@ -79,25 +96,17 @@
     box-shadow: none !important;
   }
 
-  .mint-button::after {
-    background-color: #f6f8fa !important;
-  }
-
   .sounds {
-    background: url("/static/sounds.svg");
-    background-size: cover;
-    width: 18px;
     height: 16px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
+    margin-left: 32px;
+
   }
 
   li {
     list-style: none;
   }
 
-  .description{
+  .description {
     font-size: 14px;
     padding: 0 10px;
     background-color: #edf2f7;

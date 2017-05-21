@@ -1,3 +1,4 @@
-node_modules/
+node_modules/*
+!node_modules/mint-ui/
 .idea/
 debug.log

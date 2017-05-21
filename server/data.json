@@ -20,7 +20,9 @@
   "S":[{"name":"CCC"}],
   "T":[{"name":"CCC"}],
   "U":[{"name":"CCC"}],
-  "V":[{"name":"CCC"}],
+  "V":[
+    {"name":"Vue","phonetic":"[vju:]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=uk&text=view&spd=2&source=alading","description":"Vue.js 当下流行的一套构建用户界面的渐进式框架"}
+  ],
   "W":[{"name":"CCC"}],
   "X":[{"name":"CCC"}],
   "Y":[{"name":"CCC"}],
