@@ -1,30 +1,61 @@
 {
-  "A":[{"name":"AA1","phonetic":"[sdfsdf]"},{"name":"AA2"}],
-  "B":[{"name":"BBB"}],
-  "C":[{"name":"CCC"}],
+  "A":[
+  	{"name":"App","phonetic":"[æp]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=app&spd=2&source=alading","description":"中文“应用”的单词application的缩写。"},
+  	{"name":"AJAX","phonetic":"[ˈeˌdʒæks]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=Ajax&spd=2&source=alading","description":"即“Asynchronous Javascript And XML”（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术。"},
+  	{"name":"Apache","phonetic":"[ə'pætʃɪ]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=Apache&spd=2&source=alading","description":"Apache软件基金会（Apache Software Foundation），是专门为支持开源软件项目而办的一个非营利性组织。在它所支持的Apache项目与子项目中，所发行的软件产品都遵循Apache许可证（Apache License）。"}
+  ],
+  "B":[
+  	{"name":"Babel","phonetic":"[ˈbæbəl]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=babel&spd=2&source=alading","description":"可以将ES6代码转为ES5代码的JS转码器。"}
+  ],
+  "C":[
+  	{"name":"Canvas","phonetic":"[ˈkænvəs]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=canvas&spd=2&source=alading","description":"HTML5<canvas>标签定义图形。"}
+  ],
   "D":[{"name":"DDD"}],
   "E":[{"name":"EEE"}],
   "F":[{"name":"FFF"}],
-  "G":[{"name":"CCC"}],
-  "H":[{"name":"CCC"}],
-  "I":[{"name":"CCC"}],
-  "J":[{"name":"CCC"}],
-  "K":[{"name":"CCC"}],
-  "L":[{"name":"CCC"}],
-  "M":[{"name":"CCC"}],
-  "N":[{"name":"CCC"}],
-  "O":[{"name":"CCC"}],
-  "P":[{"name":"CCC"}],
-  "Q":[{"name":"CCC"}],
-  "R":[{"name":"CCC"}],
-  "S":[{"name":"CCC"}],
-  "T":[{"name":"CCC"}],
-  "U":[{"name":"CCC"}],
-  "V":[
-    {"name":"Vue","phonetic":"[vju:]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=uk&text=view&spd=2&source=alading","description":"Vue.js 当下流行的一套构建用户界面的渐进式框架"}
+  "G":[
+  	{"name":"GitHub","phonetic":"[ɡɪt][hʌb]","audio":"http://dict.youdao.com/dictvoice?audio=git%20hub","description":"一个面向开源及私有软件项目的托管平台。发音参考Git之父演讲视频 https://www.youtube.com/watch?v=4XpnKHJAok8。"},
+  	{"name":"Gecko","phonetic":"[ˈgekoʊ]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=gecko&spd=2&source=alading","description":"FireFox浏览器内核。"}
   ],
-  "W":[{"name":"CCC"}],
+  "H":[{"name":"CCC"}],
+  "I":[
+  	{"name":"IntelliJ IDEA","phonetic":"[ɪnˈtɛlɪdʒeɪ aɪˈdɪə]","audio":"http://fanyi.baidu.com/gettts?lan=zh&text=IntelliJ%20IDEA&spd=5&source=web","description":"一款商业化销售的Java集成开发环境工具软件，IntelliJ在业界被公认为最好的java开发工具之一。"}
+  ],
+  "J":[
+  	{"name":"justify","phonetic":"[ˈdʒʌstəˌfaɪ]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=justify&spd=2&source=alading","description":"Flexbox布局属性。"}
+  ],
+  "K":[
+  	{"name":"Kotlin","phonetic":"[未找到音标]","audio":"http://dict.youdao.com/dictvoice?audio=kotlin","description":"一个基于 JVM 的新的编程语言，由 JetBrains 开发。"}
+  ],
+  "L":[
+  	{"name":"Linux","phonetic":"['lɪnəks]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=Linux&spd=2&source=alading","description":"一套免费使用和自由传播的类Unix操作系统  作者推荐的读音其实是['lainəks],但鉴于['lɪnəks]在中国十分流行，所以标注此读音。"}
+  ],
+  "M":[
+  	{"name":"Mint","phonetic":"[mɪnt]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=mint&spd=2&source=alading","description":"Mint UI 由饿了么开发的一套基于Vue.js的移动端组件库。"},{"name":"Maven","phonetic":"[ˈmevən]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=maven&spd=2&source=alading","description":"可用于构建项目、管理依赖的工具。"}
+  ],
+  "N":[
+  	{"name":"Nginx","phonetic":"[ˌɛndʒᵻnˈɛks]","audio":"http://fanyi.baidu.com/gettts?lan=en&text=engine%20X&spd=3&source=web","description":"是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。"},{"name":"node_modules","phonetic":"[noʊd]['mɒdʒʊlz]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=node modules&spd=2&source=alading","description":"npm模块目录。"},
+  	{"name":"Null","phonetic":"[nʌl]","audio":"http://dict.youdao.com/dictvoice?audio=null&type=1","description":"空值，无结果，或是空集合。"}
+  ],
+  "O":[
+  	{"name":"OpenWrt","phonetic":"[ˈoʊpən]['dʌblju:][ɑ:r][ti]","audio":"http://fanyi.baidu.com/gettts?lan=en&text=open%20w%20r%20t&spd=3&source=web","description":"可以被描述为一个嵌入式的 Linux 发行版。读音参考 https://www.youtube.com/watch?v=f4W0qvtc8N8"},
+  	{"name":"opacity","phonetic":"[oʊˈpæsəti]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=opacity&spd=2&source=alading","description":"CSS3 不透明度。"}
+  ],
+  "P":[
+  	{"name":"Python","phonetic":"[ˈpaɪθɑ:n]","audio":"http://dict.youdao.com/dictvoice?audio=python","description":"一种面向对象的解释型计算机程序设计语言。"},
+  	{"name":"Presto","phonetic":"[ˈprestoʊ]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=presto&spd=2&source=alading","description":"Opera浏览器12.18版本及之前所用的内核。"}
+  ],
+  "Q":[{"name":"CCC"}],
+  "R":[{"name":"react","phonetic":"[riˈækt]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=react&spd=2&source=alading","description":"React 是一个用于构建用户界面的 JAVASCRIPT 库。"}],
+  "S":[{"name":"SQL","phonetic":"[ˈsikwəl]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=sequel&spd=2&source=alading","description":"结构化查询语言，SQL之父Don Chamberlin自己读的是sequel，不过他推荐按字母读S-Q-L。"}],
+  "T":[{"name":"Trident","phonetic":"[ˈtraɪdn:t]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=trident&spd=2&source=alading","description":"IE浏览器内核。"}],
+  "U":[{"name":"Ubuntu","phonetic":"[ʊˈbʊntuː]","audio":"http://dict.youdao.com/dictvoice?audio=Ubuntu","description":"一个以桌面应用为主的开源GNU/Linux操作系统。音标来自于维基百科，读音综合了维基百科、百度翻译、有道翻译的发音"},{"name":"UNIX","phonetic":"[ˈjunɪks]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=UNIX&spd=2&source=alading","description":"一个强大的多用户、多任务操作系统，支持多种处理器架构的分时操作系统。"}],
+  "V":[
+    {"name":"Vue","phonetic":"[vju:]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=uk&text=view&spd=2&source=alading","description":"Vue.js 当下流行的一套构建用户界面的渐进式框架"},
+     {"name":"visibility","phonetic":"[ˌvɪzəˈbɪlɪti]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=visibility&spd=2&source=alading","description":"CSS 属性"}
+  ],
+  "W":[{"name":"Width","phonetic":"[wɪdθ]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=width&spd=2&source=alading","description":"CSS 属性：宽度"}],
   "X":[{"name":"CCC"}],
-  "Y":[{"name":"CCC"}],
+  "Y":[{"name":"YouTube","phonetic":"['ju:tu:b]","audio":"https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=en&text=YouTube&spd=2&source=alading","description":"世界上最大的404网站"}],
   "Z":[{"name":"CCC"}]
 }

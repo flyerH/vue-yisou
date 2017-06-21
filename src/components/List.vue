@@ -84,6 +84,7 @@
     .phonetic {
       vertical-align: middle;
       margin-left: 32px;
+      flex:1;
     }
   }
 
@@ -108,8 +109,8 @@
 
   .description {
     font-size: 14px;
-    padding: 0 10px;
-    background-color: #edf2f7;
+    padding: 10px 10px;
+    background-color: rgba(237,242,247,0.5);
   }
 
 </style>

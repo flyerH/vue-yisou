@@ -44,7 +44,8 @@
     },
     methods: {
       findResult: function (index) {
-        document.getElementById("cell"+index).scrollIntoView();
+        document.getElementById("cell" + index).scrollIntoView();
+        document.getElementsByClassName("mint-searchbar-cancel")[0].click();
       }
     }
   }
@@ -65,10 +66,23 @@
   .mint-search-list a {
     z-index: 999;
   }
-  li{
+
+  li {
     list-style: none;
   }
-  .description{
+
+  .description {
     display: none;
+  }
+
+  .mint-search-list .mint-cell-title img {
+    display: none;
+  }
+
+  .mint-search-list-warp {
+    box-shadow: 2px 2px 6px 0px rgba(38, 165, 255, 0.48);
+    border-bottom: 1px solid #26a2ff;
+    z-index: 1;       //设置z-index要在position上才生效
+    position: relative;
   }
 </style>
